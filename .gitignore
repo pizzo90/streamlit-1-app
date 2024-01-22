@@ -1,2 +1,2 @@
 .idea
-secrets.toml
+.streamlit/secrets.toml
