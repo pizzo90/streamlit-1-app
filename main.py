@@ -3,15 +3,21 @@
 import time
 
 import streamlit as st
-import streamlit_authenticator as sa
+import os
+from langchain.llms import OpenAIChat
 
 
 def main():
+    os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
+    llm = OpenAIChat()
+
     st.title('🫸🫷:heart: LangChain first app')
 
     with st.sidebar:
         with st.echo():
             st.write("This code will be printed to the sidebar.")
+
+            st.write
 
         with st.spinner("Loading..."):
             time.sleep(5)
