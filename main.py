@@ -105,7 +105,7 @@ def main():
         st.session_state.vectors = None
         st.session_state.vectors = get_vectorstore(split_text('test'))
 
-    st.title('🫸🫷:heart: LangChain first app')
+    st.title('🫸🫷 LangChain APP')
     with st.sidebar:
         with st.echo():
             st.write("This code will be printed to the sidebar.")
